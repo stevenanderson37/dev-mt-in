@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title>DevMtin</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DevMtin</title>
 
-<body>
+		<!--STYLES-->
+	  <link href="./styles/css/reset.css" rel="stylesheet">
+	  <link href="./styles/css/mainStyles.css"  rel="stylesheet">
+		<link href="./styles/css/animate.css"  rel="stylesheet">
 
-  
-</body>
+	</head>
+
+	<body>
+
+		<ui-view> Loading... </ui-view>
+
+
+
+		<!-- CDNs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+    <script src="./app/app.js"></script>
+
+    <!-- SERVICES  -->
+    <script src="./app/services/mainService.js"></script>
+
+    <!-- ROUTES  -->
+    <script src="./app/routes/entryView/entryCtrl.js"></script>
+		<script src="./app/routes/findFriends/findFriendsCtrl.js"></script>
+		<script src="./app/routes/friendProfile/friendProfileCtrl.js"></script>
+		<script src="./app/routes/updateProfile/updateProfileCtrl.js"></script>
+		<script src="./app/routes/userProfile/userProfileCtrl.js"></script>
+		<script src="./app/routes/viewFriends/viewFriendsCtrl.js"></script>
+
+		<!-- DIRECTIVES -->
+		<script src="./app/directives/nav-bottom/navBottomDir.js"></script>
+		<script src="./app/directives/nav-top/navTopDir.js"></script>
+
+		<!-- PLUG-INS  -->
+    <script src="./app/plugins/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+	</body>
 </html>
