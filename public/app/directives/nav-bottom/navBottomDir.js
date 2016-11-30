@@ -3,7 +3,7 @@ angular.module("app")
 
   return {
     restrict: 'AE',
-    templateUrl: './app/directives/nav-bottom/navBottomTmpl.html'
+    templateUrl: './../public/app/directives/nav-bottom/navBottomTmpl.html'
     }
 
 
